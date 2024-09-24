@@ -17,30 +17,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/home", element: <Home />
-  },
-  {
-    path: "/about", element: <About />
-  },
-  {
-    path: "/service", element: <Service />
-  },
-  {
-    path: "/project", element: <Project />
-  },
-  {
-    path: "/contact", element: <Contact />
-  },
-  {
-    path: "/team", element: <Team />
-  },
-  {
-    path: "/client", element: <Client />
-  },
-  {
-    path: "/error", element: <Error />
   }
-]);
-
+ 
 export default function App() {
   return (
     <>
