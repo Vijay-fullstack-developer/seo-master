@@ -44,7 +44,6 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <>
-      <Header />  {/* Common component - always visible */}
       <RouterProvider router={router} />
     </>
   );
