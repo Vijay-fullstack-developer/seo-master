@@ -11,18 +11,19 @@ import Team from './Page/Team';
 import Client from './Page/Client';
 import Error from './Page/Error';
 
-const router = createBrowserRouter([
-  {
-    path: "/", element: <Home /> // Default route points to Home
-  },
-  {
-    path: "/home", element: <Home />
-  }
+// const router = createBrowserRouter([
+//   {
+//     path: "/", element: <Home /> // Default route points to Home
+//   },
+//   {
+//     path: "/home", element: <Home />
+//   }
  
 export default function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      // <RouterProvider router={router} />
+    <Home/>
     </>
   );
 }
