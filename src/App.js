@@ -1,58 +1,50 @@
 // App.js
 import './App.css';
 import About from './Page/About';
+import Header from './Page/Header';
 import Service from './Page/Service';
 import Project from './Page/Project';
 import Home from './Page/Home';
 import Contact from './Page/Contact';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Team from './Page/Team';
 import Client from './Page/Client';
 import Error from './Page/Error';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './Layout';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Layout><Home /></Layout>  // Wrap Home with Layout
+    path: "/", element: <Home /> // Default route points to Home
   },
   {
-    path: "/home",
-    element: <Layout><Home /></Layout>  // Wrap Home with Layout
+    path: "/home", element: <Home />
   },
   {
-    path: "/about",
-    element: <Layout><About /></Layout>  // Wrap About with Layout
+    path: "/about", element: <About />
   },
   {
-    path: "/service",
-    element: <Layout><Service /></Layout>  // Wrap Service with Layout
+    path: "/service", element: <Service />
   },
   {
-    path: "/project",
-    element: <Layout><Project /></Layout>  // Wrap Project with Layout
+    path: "/project", element: <Project />
   },
   {
-    path: "/contact",
-    element: <Layout><Contact /></Layout>  // Wrap Contact with Layout
+    path: "/contact", element: <Contact />
   },
   {
-    path: "/team",
-    element: <Layout><Team /></Layout>  // Wrap Team with Layout
+    path: "/team", element: <Team />
   },
   {
-    path: "/client",
-    element: <Layout><Client /></Layout>  // Wrap Client with Layout
+    path: "/client", element: <Client />
   },
   {
-    path: "*",
-    element: <Layout><Error /></Layout>  // Wrap Error page with Layout
+    path: "*", element: <Error />  // Wildcard route for 404 error handling
   }
 ]);
 
 export default function App() {
   return (
     <>
+      <Header />  {/* Common component - always visible */}
       <RouterProvider router={router} />
     </>
   );
