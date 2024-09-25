@@ -298,7 +298,7 @@ export default function Home() {
                                             <a class="circle" href=""><i class="fa-brands fa-instagram"></i></a>
                                             <a class="circle" href=""><i class="fa-brands fa-linkedin"></i></a>
                                         </div>
-                                        <img src="/Assert/team-1.jpg" alt="Team-1" />
+                                        <img src="./Assert/team-1.jpg" alt="Team-1" />
                                     </div>
                                     <div class="content-text">
                                         <h4>Jhon Doe</h4>
@@ -315,7 +315,7 @@ export default function Home() {
                                             <a class="circle" href=""><i class="fa-brands fa-instagram"></i></a>
                                             <a class="circle" href=""><i class="fa-brands fa-linkedin"></i></a>
                                         </div>
-                                        <img src="/Assert/team-2.jpg" alt="Team-1" />
+                                        <img src="./Assert/team-2.jpg" alt="Team-1" />
                                     </div>
                                     <div class="content-text">
                                         <h4>Emma William</h4>
@@ -332,7 +332,7 @@ export default function Home() {
                                             <a class="circle" href=""><i class="fa-brands fa-instagram"></i></a>
                                             <a class="circle" href=""><i class="fa-brands fa-linkedin"></i></a>
                                         </div>
-                                        <img src="/Assert/team-3.jpg" alt="Team-1" />
+                                        <img src="./Assert/team-3.jpg" alt="Team-1" />
                                     </div>
                                     <div class="content-text">
                                         <h4>Noah Michael</h4>
